@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
   background: url('trumpmuskgay.png') no-repeat center center fixed;
   background-size: cover;
   background-color: #222;
@@ -8,6 +8,15 @@ body {
   font-family: 'Anton', sans-serif;
   line-height: 1.6;
   text-transform: uppercase;
+}
+
+p {
+  text-transform: none;
+  font-family: 'Staatliches', cursive, sans-serif;
+  line-height: 1.6;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 /* nav styles */
@@ -44,4 +53,17 @@ nav.main-nav a:hover {
   color: white;
 }
 
-/* ... and the rest of your styles */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 8px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 2rem 0 1rem;
+}
