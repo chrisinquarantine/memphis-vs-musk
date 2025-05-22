@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: url('trumpmuskgay.png') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #222;
+  color: #fff;
+  font-family: 'Anton', sans-serif;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+/* nav styles */
+nav.main-nav {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 1rem;
+  text-align: center;
+  border-top: 2px solid #ff0033;
+  border-bottom: 2px solid #ff0033;
+  margin-top: 1rem;
+}
+nav.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav.main-nav li {
+  display: inline-block;
+  margin: 0 1rem;
+}
+nav.main-nav a {
+  color: #ff0033;
+  font-family: 'Anton', sans-serif;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-shadow:
+    -1px -1px 0 #fff,
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+  transition: color 0.3s;
+}
+nav.main-nav a:hover {
+  color: white;
+}
+
+/* ... and the rest of your styles */
