@@ -1,4 +1,4 @@
-/* Body & background */
+/* Base body styles */
 body {
   margin: 0;
   min-height: 100vh;
@@ -9,22 +9,28 @@ body {
   font-family: 'Anton', sans-serif;
   line-height: 1.6;
   text-transform: uppercase;
-  text-align: center;  /* center everything by default */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
 }
 
-/* Nav */
+/* Navigation styles */
 nav.main-nav {
-  background-color: rgba(0,0,0,0.85);
+  background-color: rgba(0, 0, 0, 0.85);
   padding: 1rem;
+  text-align: center;
   border-top: 2px solid #ff0033;
   border-bottom: 2px solid #ff0033;
+  width: 100%;
+  box-sizing: border-box;
   margin-top: 1rem;
 }
 
 nav.main-nav ul {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 nav.main-nav li {
@@ -49,107 +55,158 @@ nav.main-nav a:hover {
   color: white;
 }
 
-/* Header */
+/* Header styles */
+header {
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+  max-width: 900px;
+  width: 100%;
+}
+
 header h1 {
   font-family: 'Staatliches', cursive;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #ff0033;
-  margin: 0.5rem 0;
   text-shadow:
     -2px -2px 0 #fff,
      2px -2px 0 #fff,
     -2px  2px 0 #fff,
      2px  2px 0 #fff;
+  margin-bottom: 0.5rem;
 }
 
 header .cta {
+  font-family: 'Anton', sans-serif;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: white;
+  color: #fff;
   text-shadow:
     -1px -1px 0 #ff0033,
      1px -1px 0 #ff0033,
     -1px  1px 0 #ff0033,
      1px  1px 0 #ff0033;
+  margin-bottom: 1.5rem;
 }
 
 /* Buttons */
-.button {
-  background-color: #ff0033;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  font-family: 'Anton', sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 4px;
+a.button {
   display: inline-block;
-  margin: 0.5rem 0 1rem 0;
+  background-color: #ff0033;
+  color: white !important;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.25rem;
   box-shadow:
     0 0 10px #ff0033,
-    0 0 20px #ff0033;
+    inset 0 0 5px #fff;
   transition: background-color 0.3s, box-shadow 0.3s;
+  margin-bottom: 2rem;
 }
 
-.button:hover {
-  background-color: #cc0029;
+a.button:hover {
+  background-color: #ff3366;
   box-shadow:
-    0 0 15px #ff0033,
-    0 0 30px #ff0033;
+    0 0 15px #ff3366,
+    inset 0 0 8px #fff;
 }
 
-/* Subtitles */
+/* Overlay container for content */
+.overlay {
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+/* Section headings - red with white outline */
 section h2 {
+  color: #ff0033;
   font-family: 'Anton', sans-serif;
   font-size: 2rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #ff0033;
   text-shadow:
-    -1px -1px 0 #fff,
-     1px -1px 0 #fff,
-    -1px  1px 0 #fff,
-     1px  1px 0 #fff;
-}
-
-/* Paragraphs */
-section p {
-  font-family: 'Anton', sans-serif;
-  font-size: 1rem;
-  color: white;
-  margin: 0 1rem 1rem 1rem;
-  line-height: 1.5;
-  text-transform: none;
+    -2px -2px 0 #fff,
+     2px -2px 0 #fff,
+    -2px  2px 0 #fff,
+     2px  2px 0 #fff;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
-/* Sources list */
-section ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0 auto 2rem auto;
-  max-width: 600px;
+/* Paragraphs with black transparent backdrop and centered text */
+section p {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.1rem;
+}
+
+/* Source list inside paragraphs fix */
+section p ul {
+  list-style: inside disc;
+  padding-left: 1rem;
   text-align: left;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  background: none;
+  display: block;
 }
 
-section ul li {
-  margin-bottom: 0.5rem;
-}
-
-section ul li a {
+section p ul li a {
   color: #ff0033;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-section ul li a:hover {
-  text-decoration: underline;
+section p ul li a:hover {
+  color: #ff6699;
 }
 
 /* Footer */
 footer {
-  padding: 1rem;
+  text-align: center;
+  padding: 1rem 0;
   background-color: rgba(0, 0, 0, 0.85);
   border-top: 2px solid #ff0033;
   color: white;
   font-family: 'Anton', sans-serif;
   font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  position: sticky;
+  bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header .cta {
+    font-size: 1.2rem;
+  }
+
+  nav.main-nav a {
+    font-size: 1rem;
+  }
+
+  a.button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  section p {
+    font-size: 1rem;
+    max-width: 100%;
+    padding: 0.8rem;
+  }
 }
