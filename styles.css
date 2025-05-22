@@ -1,6 +1,8 @@
+/* Body styles */
 body {
   margin: 0;
-  min-height: 100vh;
+  padding: 0;
+  height: 100vh;
   background: url('trumpmuskgay.png') no-repeat center center fixed;
   background-size: cover;
   background-color: #222;
@@ -10,81 +12,7 @@ body {
   text-transform: uppercase;
 }
 
-p {
-  text-transform: none;
-  font-family: 'Staatliches', cursive, sans-serif;
-  line-height: 1.6;
-  font-weight: normal;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-
-
-
-
-
-
-.button {
-  display: inline-block;
-  background-color: #ff0033;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  text-transform: uppercase;
-  font-family: 'Anton', sans-serif;
-  font-weight: bold;
-  border: none;
-  border-radius: 4px;
-  text-decoration: none;
-  box-shadow:
-    -1px -1px 0 #fff,
-     1px -1px 0 #fff,
-    -1px  1px 0 #fff,
-     1px  1px 0 #fff;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: white;
-  color: #ff0033;
-  cursor: pointer;
-}
-
-
-
-h2 {
-  color: #ff0033;
-  text-shadow:
-    -1px -1px 0 #fff,
-     1px -1px 0 #fff,
-    -1px  1px 0 #fff,
-     1px  1px 0 #fff;
-  font-family: 'Anton', sans-serif;
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* nav styles */
+/* Nav styles */
 nav.main-nav {
   background-color: rgba(0, 0, 0, 0.85);
   padding: 1rem;
@@ -118,17 +46,124 @@ nav.main-nav a:hover {
   color: white;
 }
 
-.overlay {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 2rem;
-  max-width: 900px;
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: #ff0033;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Anton', sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow:
+    -1px -1px 0 #fff,
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: white;
+  color: #ff0033;
+}
+
+/* Headers and subtitles */
+header {
+  text-align: center;
   margin: 2rem auto;
+  max-width: 800px;
+}
+
+header h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 4rem;
+  color: #ff0033;
+  text-shadow:
+    -2px -2px 0 #fff,
+     2px -2px 0 #fff,
+    -2px  2px 0 #fff,
+     2px  2px 0 #fff;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+}
+
+.cta {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+header .button {
+  font-size: 1.2rem;
+}
+
+/* Subtitles (h2) */
+h2 {
+  color: #ff0033;
+  text-shadow:
+    -1px -1px 0 #fff,
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* Sections container */
+.overlay {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
 }
 
-footer p {
+/* Paragraph styling */
+p {
+  font-family: 'Anton', sans-serif;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
   text-align: center;
-  font-size: 0.9rem;
-  color: #ccc;
-  margin: 2rem 0 1rem;
+  padding: 1rem 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-top: 2px solid #ff0033;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+/* Lists in Sources */
+ul {
+  padding-left: 1.2rem;
+  margin-top: 0;
+}
+ul li {
+  margin-bottom: 0.5rem;
+}
+ul li a {
+  color: #ff0033;
+  text-decoration: none;
+  text-shadow:
+    -1px -1px 0 #fff,
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+}
+ul li a:hover {
+  color: white;
 }
