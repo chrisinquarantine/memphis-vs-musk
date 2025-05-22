@@ -1,3 +1,4 @@
+/* Body & background */
 body {
   margin: 0;
   min-height: 100vh;
@@ -8,31 +9,29 @@ body {
   font-family: 'Anton', sans-serif;
   line-height: 1.6;
   text-transform: uppercase;
+  text-align: center;  /* center everything by default */
 }
 
-/* Center text on main containers */
-.overlay, header, footer {
-  text-align: center;
-}
-
-/* nav styles */
+/* Nav */
 nav.main-nav {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0,0,0,0.85);
   padding: 1rem;
-  text-align: center;
   border-top: 2px solid #ff0033;
   border-bottom: 2px solid #ff0033;
   margin-top: 1rem;
 }
+
 nav.main-nav ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
+
 nav.main-nav li {
   display: inline-block;
   margin: 0 1rem;
 }
+
 nav.main-nav a {
   color: #ff0033;
   font-family: 'Anton', sans-serif;
@@ -45,22 +44,24 @@ nav.main-nav a {
      1px  1px 0 #fff;
   transition: color 0.3s;
 }
+
 nav.main-nav a:hover {
   color: white;
 }
 
-/* Header styles */
+/* Header */
 header h1 {
   font-family: 'Staatliches', cursive;
   font-size: 3rem;
-  margin: 0.5rem 0;
   color: #ff0033;
+  margin: 0.5rem 0;
   text-shadow:
     -2px -2px 0 #fff,
      2px -2px 0 #fff,
     -2px  2px 0 #fff,
      2px  2px 0 #fff;
 }
+
 header .cta {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -72,23 +73,23 @@ header .cta {
      1px  1px 0 #ff0033;
 }
 
-/* Button styles */
+/* Buttons */
 .button {
-  display: inline-block;
   background-color: #ff0033;
   color: white;
   padding: 0.75rem 1.5rem;
   font-family: 'Anton', sans-serif;
-  text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
   border-radius: 4px;
+  display: inline-block;
+  margin: 0.5rem 0 1rem 0;
   box-shadow:
     0 0 10px #ff0033,
     0 0 20px #ff0033;
   transition: background-color 0.3s, box-shadow 0.3s;
-  margin: 0.5rem 0 1rem 0;
 }
+
 .button:hover {
   background-color: #cc0029;
   box-shadow:
@@ -96,7 +97,7 @@ header .cta {
     0 0 30px #ff0033;
 }
 
-/* Section headings */
+/* Subtitles */
 section h2 {
   font-family: 'Anton', sans-serif;
   font-size: 2rem;
@@ -118,6 +119,7 @@ section p {
   margin: 0 1rem 1rem 1rem;
   line-height: 1.5;
   text-transform: none;
+  text-align: center;
 }
 
 /* Sources list */
@@ -128,13 +130,16 @@ section ul {
   max-width: 600px;
   text-align: left;
 }
+
 section ul li {
   margin-bottom: 0.5rem;
 }
+
 section ul li a {
   color: #ff0033;
   text-decoration: none;
 }
+
 section ul li a:hover {
   text-decoration: underline;
 }
@@ -148,7 +153,3 @@ footer {
   font-family: 'Anton', sans-serif;
   font-size: 1rem;
 }
-
-/* Fix nested body issue — make sure your HTML has only one <body> tag */
-/* If not sure, double-check your HTML for duplicate <body> tags */
-
