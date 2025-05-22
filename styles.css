@@ -19,6 +19,12 @@ p {
   margin-bottom: 1.5rem;
 }
 
+
+
+
+
+
+
 .button {
   display: inline-block;
   background-color: #ff0033;
@@ -43,6 +49,38 @@ p {
   color: #ff0033;
   cursor: pointer;
 }
+
+
+
+h2 {
+  color: #ff0033;
+  text-shadow:
+    -1px -1px 0 #fff,
+     1px -1px 0 #fff,
+    -1px  1px 0 #fff,
+     1px  1px 0 #fff;
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
