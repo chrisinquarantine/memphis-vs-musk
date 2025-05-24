@@ -141,7 +141,7 @@ section h2 {
 
 /* Paragraphs with black transparent backdrop and centered text */
 section p {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.85);
   padding: 1rem;
   border-radius: 8px;
   display: inline-block;
