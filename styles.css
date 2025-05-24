@@ -152,6 +152,18 @@ section p {
   font-size: 1.1rem;
 }
 
+/* Class for backdrop behind other stuff */
+.content-block {
+  background-color: rgba(0, 0, 0, 0.6);  /* same smoky black */
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto 1.5rem auto;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.1rem;
+}
+
 /* Source list inside paragraphs fix */
 section p ul {
   list-style: inside disc;
