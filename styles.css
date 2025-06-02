@@ -28,6 +28,11 @@
   text-transform: uppercase;
 }
 
+.hero-title {
+  position: relative;
+  z-index: 2; /* or higher */
+}
+
 
 
 /* Base body styles */
@@ -86,6 +91,11 @@ nav.main-nav a {
 
 nav.main-nav a:hover {
   color: red;
+}
+
+nav {
+  position: relative;
+  z-index: 1;
 }
 
 
