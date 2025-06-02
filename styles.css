@@ -1,3 +1,35 @@
+/* Title */
+.hero-title {
+  font-size: 5rem;
+  font-family: 'Anton', sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 10rem;
+  text-shadow:
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  font-family: 'Anton', sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 1rem;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+  text-transform: uppercase;
+}
+
+
+
 /* Base body styles */
 body {
   margin: 0;
@@ -17,17 +49,15 @@ body {
 
 /* Navigation styles */
 nav.main-nav {
-  background-color: rgba(0, 0, 0, 0.95);
-  padding: 1rem 0;
+  background-color: black;
+  padding: 1.5rem 0;
   text-align: center;
-  border-top: 3px solid #ff0033;
-  border-bottom: 3px solid #ff0033;
-  width: 100%;
-  box-sizing: border-box;
+  border-top: 3px solid red;
+  border-bottom: 3px solid red;
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 1000;
+  width: 100%;
+  z-index: 999;
 }
 
 nav.main-nav ul {
@@ -36,31 +66,26 @@ nav.main-nav ul {
   margin: 0;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-}
-
-nav.main-nav li {
-  margin: 0;
+  gap: 4rem;
 }
 
 nav.main-nav a {
-  color: #ff0033;
-  font-family: 'Anton', sans-serif !important;
+  color: white;
   text-decoration: none;
-  font-size: 1.4rem;
-  letter-spacing: 2px;
+  font-size: 1.8rem;
+  font-family: 'Anton', sans-serif;
   text-transform: uppercase;
+  letter-spacing: 1px;
   text-shadow:
-    -1px -1px 0 #fff,
-     1px -1px 0 #fff,
-    -1px  1px 0 #fff,
-     1px  1px 0 #fff;
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
   transition: color 0.3s ease;
 }
 
 nav.main-nav a:hover {
-  color: white;
+  color: red;
 }
 
 
