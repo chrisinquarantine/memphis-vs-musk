@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources | Tigers Against Pollution</title>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap&family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .resource-grid a {
+      display: block;
+      padding: 1rem;
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .resource-grid a:hover {
+      background-color: #444;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="reps.html">Contact Your Reps</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 class="hero-title">Tigers Against Pollution</h1>
+    <h2 class="hero-subtitle">Organize. Resist. Expose.</h2>
+  </section>
+
+  <main>
+    <section>
+      <h2>Digital Library</h2>
+      <p>This is a digital library comprised of several educational documents, meant to supply the reader with knowledge needed in different facets of revolution. Including topics such as protest etiquette, intervention in local politics, protest security, etc.</p>
+
+      <div class="resource-grid">
+        <a href="library/OPSEC Tips for a protester.pdf" target="_blank">📵 OPSEC Tips for a Protester (PDF)</a>
+        <a href="library/Commissioners Meetings Guide.pdf" target="_blank">🏛️ How to Apply Local Political Pressure </a>
+        <a href="library/XAI Canvassing Education.pdf" target="_blank">🧠 Foundational Knowledge of xAI/Data Centers</a>
+        <!-- Add more as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Tigers vs Pollution - Built by the people, for the people. © 2025 Tigers Against Pollution. All rights reserved.</p>
+  </footer>
+</body>
+</html>
